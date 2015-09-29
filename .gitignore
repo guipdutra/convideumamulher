@@ -1,3 +1,6 @@
+tags
+db/test.sqlite3
+db/development.sqlite3
 *.gem
 *.rbc
 /.config
