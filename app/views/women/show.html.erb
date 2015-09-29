@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @woman.name %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @woman.area %>
+</p>
+
+<p>
+  <strong>Current position:</strong>
+  <%= @woman.current_position %>
+</p>
+
+<p>
+  <strong>Linkedin:</strong>
+  <%= @woman.linkedin %>
+</p>
+
+<%= link_to 'Edit', edit_woman_path(@woman) %> |
+<%= link_to 'Back', women_path %>

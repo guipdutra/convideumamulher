@@ -1,0 +1,33 @@
+<%= form_for(@woman) do |f| %>
+  <% if @woman.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@woman.errors.count, "error") %> prohibited this woman from being saved:</h2>
+
+      <ul>
+      <% @woman.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :current_position %><br>
+    <%= f.text_field :current_position %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin %><br>
+    <%= f.text_field :linkedin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
