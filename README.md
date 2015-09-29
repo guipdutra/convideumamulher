@@ -13,9 +13,28 @@ Uma iniciativa que acredita que uma maior representatividade feminina é possív
 
 ### Para rodar localmente
 
-1. Clone este repositório: `$ git clone https://github.com/guipdutra/convideumamulher`
-2. Entre na pasta do projeto: `$ cd convideumamulher`
-3. Instale o bundle: `$ gem install bundle`
-4. Instale as dependências (gems): `$ bundle install`
-5. Execute as migrações: `$ rake db:migrate`
-6. Rode localmente: `$ rails server`
+1. Clone este repositório: 
+
+`$ git clone https://github.com/guipdutra/convideumamulher`
+
+2. Entre na pasta do projeto: 
+
+`$ cd convideumamulher`
+
+3. Instale o bundle: 
+
+`$ gem install bundle`
+
+4. Instale as dependências (gems): 
+
+`$ bundle install`
+
+5. Execute as migrações: 
+
+`$ rake db:migrate`
+
+6. Rode o servidor: 
+
+`$ rails server`
+
+A aplicação estará rodando em `http://localhost:3000`
