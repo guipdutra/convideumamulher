@@ -10,7 +10,7 @@ Uma iniciativa que acredita que uma maior representatividade feminina é possív
 ```bash
        $ gem install bundle
 ```
- - Instale as dependencias
+ - Instale as dependências
 ```bash
        $ bundle install
 ```
