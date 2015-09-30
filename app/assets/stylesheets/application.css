@@ -2,7 +2,7 @@
   background-image: url("banner.png");
   background-color: #EA493A;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-position: center;
 }
@@ -14,7 +14,10 @@
   background-image: url("logo.png");
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
-  width: 300px;
+  height: 210px;
+  width: 280px;
 }
 
+h1 {
+  padding: 10px 0px 10px 40px;
+}

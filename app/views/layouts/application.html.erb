@@ -3,19 +3,26 @@
 <head>
   <title>Convide uma mulher para palestrar</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="header">
     <a href="/">
-      <div class="logo-container">
-        <div class="logo">
-        </div>
+      <div class="logo">
       </div>
     </a>
   </div>
-  <%= link_to "Women", women_path %>
+  <ul class="nav nav-tabs">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <%= link_to "Women", women_path %>
+    </li>
+  </ul>
 
 <%= yield %>
 
