@@ -4,7 +4,11 @@ class WomenController < ApplicationController
   # GET /women
   # GET /women.json
   def index
-    @women = Woman.all
+    if params[:search]
+      @women = Woman.search(params[:search])
+    else
+      @women = Woman.all
+    end
   end
 
   # GET /women/1
@@ -62,13 +66,13 @@ class WomenController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_woman
-      @woman = Woman.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_woman
+    @woman = Woman.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def woman_params
-      params.require(:woman).permit(:name, :area, :current_position, :linkedin)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def woman_params
+    params.require(:woman).permit(:name, :area, :current_position, :linkedin)
+  end
 end
