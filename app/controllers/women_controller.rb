@@ -4,11 +4,16 @@ class WomenController < ApplicationController
   # GET /women
   # GET /women.json
   def index
-    if params[:search]
-      @women = Woman.search(params[:search])
+    @women = Woman.all
+  end
+
+  def search
+    if params[:query].present?
+      @women = Woman.search(params[:query])
     else
       @women = Woman.all
     end
+    render :index
   end
 
   # GET /women/1
