@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Convideumamulher</title>
+  <title>Convide uma mulher para palestrar</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="header">
+    <a href="/">
+      <div class="logo">
+      </div>
+    </a>
+  </div>
+
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <%= link_to "Women", women_path %>
+    </li>
+  </ul>
 
 <%= yield %>
 
