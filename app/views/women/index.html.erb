@@ -1,7 +1,7 @@
 <h1>Confira as mulheres já cadastradas</h1>
 
 <%= form_tag(search_women_path, :method => "get") do %>
-  <%= text_field_tag :query, params[:query], placeholder: "Search women" %>
+  <%= text_field_tag :query, params[:query], placeholder: "Search women by expertise area" %>
   <%= submit_tag "Search" %>
 <% end %>
 
