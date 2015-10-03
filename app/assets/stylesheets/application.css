@@ -1,22 +1,19 @@
 .header {
-  background-image: url("banner.png");
-  background-color: #EA493A;
+  background-image: url("logo.png");
   background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
   background-position: center;
-  margin-bottom: 10px;
+  background-size: 129px;
+  height: 110px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-container {
 }
 
 .logo {
-  background-image: url("logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 210px;
-  width: 280px;
+
 }
 
 h1 {
