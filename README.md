@@ -10,6 +10,7 @@ Uma iniciativa que acredita que uma maior representatividade feminina é possív
 
 1. [Ruby](https://www.ruby-lang.org/en/)
 2. [Rails](http://rubyonrails.org/) 4.1.5
+3. [PostgreSQL] (http://www.postgresql.org/)
 
 ### Para rodar localmente
 
