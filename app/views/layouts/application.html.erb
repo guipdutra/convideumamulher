@@ -15,22 +15,31 @@
       <a href="/"> </a>
   </header>
   <div class="body_bg">
-    <div>
-      <h1 class="convide">Convide uma mulher para palestrar</h1>
-      <h2 class="description">Acreditamos que uma maior representatividade feminina é possível em eventos, palestras, workshops, entrevistas e projetos por aí :)</h2>
-    </div>
-    <div>
-      <button>Ver lista de mulheres</button>
-      <button>Indicar uma mulher incrível</button>
+    <div class="container fill">
+      <div class="row" style="margin-top: 50px;">
+        <h1 class="convide text-center col-md-offset-2 col-md-8 col-md-offset-2">Convide uma mulher para palestrar</h1>
+        <h2 class="description text-center col-md-offset-2 col-md-8 col-md-offset-2">Acreditamos que uma maior representatividade feminina é possível em eventos, palestras, workshops, entrevistas e projetos por aí :)</h2>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="text-center">
+          <a class="btn button" href="/women"><button class"btn button" style="font-size: 19px;">Ver lista de mulheres</button></a>
+          <a class="btn button" href="/women/new"><button class"btn button" style="font-size: 19px;">Indicar uma mulher incrível</button></a>
+        </div>
+      </div>
     </div>
   </div>
 
+    <%= yield %>
 
-
-      <!-- <%= link_to "Women", women_path %> -->
-
-
-<%= yield %>
+<!-- <footer>
+  <a href="http://facebook.com/convideumamulher">facebook</a>
+  <a href="https://github.com/guipdutra/convideumamulher">github</a>
+</footer> -->
 
 </body>
 </html>
