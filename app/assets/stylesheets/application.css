@@ -27,10 +27,8 @@ footer {
 }
 
 .fill {
-
     min-height: 100%;
     height: 100%;
-
 }
 
 .body_bg {
@@ -77,6 +75,10 @@ p {
   font-color: #000;
 }
 
-h1 {
+.content-container {
   padding: 10px 0px 10px 40px;
+}
+
+.content {
+  padding-top: 20px;
 }

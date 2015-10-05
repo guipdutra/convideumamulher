@@ -1,41 +1,49 @@
 <h1>Confira as mulheres já cadastradas</h1>
 
 <%= form_tag(search_women_path, :method => "get") do %>
-  <%= text_field_tag :query, params[:query], placeholder: "Search women" %>
-  <%= submit_tag "Search" %>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <%= text_field_tag :query, params[:query], placeholder: "Procurar por área", class: "form-control" %>
+        <span class="input-group-btn">
+          <%= submit_tag "Search", class: "btn btn-default" %>
+        </span>
+      </div>
+    </div>
+  </div>
 <% end %>
 
-<% if @women.present? %>
+<div class="content">
+  <% if @women.present? %>
 
-       <table>
-       <thead>
-       <tr>
-       <th>Name</th>
-       <th>Area</th>
-       <th>Current position</th>
-       <th>Linkedin</th>
-       <th colspan="3"></th>
-       </tr>
-       </thead>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Área</th>
+          <th>Cargo atual</th>
+          <th>LinkedIn</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-       <tbody>
-       <% @women.each do |woman| %>
-         <tr>
-         <td><%= woman.name %></td>
-         <td><%= woman.area %></td>
-         <td><%= woman.current_position %></td>
-         <td><%= woman.linkedin %></td>
-         <td><%= link_to 'Show', woman %></td>
-         <td><%= link_to 'Edit', edit_woman_path(woman) %></td>
-         <td><%= link_to 'Destroy', woman, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-         </tr>
-       <% end %>
-       </tbody>
-       </table>
+      <tbody>
+        <% @women.each do |woman| %>
+          <tr>
+            <td><%= woman.name %></td>
+            <td><%= woman.area %></td>
+            <td><%= woman.current_position %></td>
+            <td><%= woman.linkedin %></td>
+            <td><%= link_to 'Mais detalhes', woman %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-       <br>
-     <% else %>
-       <p> There are no women containing the name <%= params[:search] %></p>
-     <% end %>
+    <br>
+  <% else %>
+    <p> Não encontramos nenhuma mulher na área <strong><%= params[:query] %></strong></p>
+  <% end %>
 
-     <%= link_to 'New Woman', new_woman_path %>
+  <%= link_to 'Indicar uma mulher incrível!', new_woman_path %>
+</div>
