@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, "Nome" %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :area %><br>
+    <%= f.label :area, "Área" %><br>
     <%= f.text_field :area %>
   </div>
   <div class="field">
-    <%= f.label :current_position %><br>
+    <%= f.label :current_position, "Cargo atual" %><br>
     <%= f.text_field :current_position %>
   </div>
   <div class="field">
-    <%= f.label :linkedin %><br>
+    <%= f.label :linkedin, "Endereço para LinkedIn" %><br>
     <%= f.text_field :linkedin %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Indicar", class: "btn btn-default" %>
   </div>
 <% end %>
