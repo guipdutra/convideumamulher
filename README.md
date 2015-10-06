@@ -22,19 +22,23 @@ Uma iniciativa que acredita que uma maior representatividade feminina é possív
 
 `$ cd convideumamulher`
 
-3. Instale o bundle: 
+3. Se você não tem o Rails instalado:
+
+`$ sudo gem install rails`
+
+4. Instale o bundle: 
 
 `$ gem install bundle`
 
-4. Instale as dependências (gems): 
+5. Instale as dependências (gems): 
 
 `$ bundle install`
 
-5. Execute as migrações: 
+6. Execute as migrações: 
 
 `$ rake db:migrate`
 
-6. Rode o servidor: 
+7. Rode o servidor: 
 
 `$ rails server`
 
